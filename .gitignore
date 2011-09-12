@@ -1,1 +1,8 @@
 *~
+build/
+BUILD/
+*.aux
+*.backup
+*.vrb
+*.log
+*.out
