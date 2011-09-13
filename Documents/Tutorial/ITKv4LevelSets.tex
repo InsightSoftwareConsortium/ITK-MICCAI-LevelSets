@@ -67,8 +67,8 @@
 
 \begin{document}
 
-\title[ITKv4 - Level Sets]{ITKv4 New Level Sets Framework}
-\subtitle[ITK-OpenCV]{A New Open Source Software Resource for CV}
+\title[ITKv4 - Level Sets]{ITKv4: New Level Sets Framework}
+
 \institute[Insight Software Consortium]{Insight Software Consortium\\
 Megason Lab, Department of Systems Biology, Harvard Medical School}
 \date[September 2011]{September 2011}
@@ -263,36 +263,37 @@ Overview of the Level-Sets in ITKv3
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}
-\frametitle{PDE Model in ITKv3}
-\begin{equation*}
- \frac{\partial \phi}{\partial \tau} = 
-      \alpha \cdot \overrightarrow{A}(p) \bullet \overrightarrow{\nabla} \phi -
-      \beta \cdot P(p) \cdot \|\overrightarrow{\nabla} \phi\| +
-      \gamma \cdot \|\overrightarrow{\nabla} \phi\| \cdot 
-      \text{div}\ \frac{\overrightarrow{\nabla}
-      \phi}{\|\overrightarrow{\nabla} \phi\|}    
-\end{equation*}
-
-\begin{columns}
- 
-  \column{0.4\textwidth}
-  \begin{block}{Function}
-    Discretization of the PDE
-    \vspace{1.2cm}
-  \end{block}
-
-  \column{0.4\textwidth}
-  \begin{block}{Solver}
-    Iterative evolution of $\phi$
-    \begin{enumerate}
-          \item ''Dense''
-          \item ''Sparse''
-    \end{enumerate}
-  \end{block}
-\end{columns}
-
-\end{frame}
+% \begin{frame}
+% \frametitle{PDE Model in ITKv3}
+% \begin{equation*}
+%  \frac{\partial \phi}{\partial \tau} = 
+%       \alpha \cdot \overrightarrow{A}(p) \bullet \overrightarrow{\nabla} \phi
+-
+%       \beta \cdot P(p) \cdot \|\overrightarrow{\nabla} \phi\| +
+%       \gamma \cdot \|\overrightarrow{\nabla} \phi\| \cdot 
+%       \text{div}\ \frac{\overrightarrow{\nabla}
+%       \phi}{\|\overrightarrow{\nabla} \phi\|}    
+% \end{equation*}
+% 
+% \begin{columns}
+%  
+%   \column{0.4\textwidth}
+%   \begin{block}{Function}
+%     Discretization of the PDE
+%     \vspace{1.2cm}
+%   \end{block}
+% 
+%   \column{0.4\textwidth}
+%   \begin{block}{Solver}
+%     Iterative evolution of $\phi$
+%     \begin{enumerate}
+%           \item ''Dense''
+%           \item ''Sparse''
+%     \end{enumerate}
+%   \end{block}
+% \end{columns}
+% 
+% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -488,17 +489,19 @@ Overview of the Level-Sets in ITKv4
 
 % \include{ITKVideoFilters}
 
-% % \begin{frame}
-% % \frametitle{Wrap-up}
-% % \begin{itemize}
-% % \item Send us feedback (good or bad) \\
-% % arnaud_gelas@hms.harvard.edu \\
-% % kishore_mosaliganti@hms.harvard.edu \\
-% % sean_megason@hms.harvard.edu \\
-% % \item Raffle\\
-% % \includegraphics[height=1.5in]{asus}
-% % \end{itemize}
-% % \end{frame}
+\begin{frame}
+\frametitle{Wrap-up}
+\begin{itemize}
+  \item Send us feedback (good or bad)
+  \begin{itemize}
+    \item \url{arnaud_gelas@hms.harvard.edu} 
+    \item \url{kishore_mosaliganti@hms.harvard.edu} 
+    \item \url{sean_megason@hms.harvard.edu}
+  \end{itemize}
+%   \item Raffle\\
+% \includegraphics[height=1.5in]{asus}
+\end{itemize}
+\end{frame}
 
 
 \end{document}
